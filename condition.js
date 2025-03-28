@@ -112,14 +112,14 @@
 
 // change password
 
-let oldpass=123,newpass=123,cpass=123;
-if(oldpass==newpass){
-    console.error("old and new password both are same");
-}else{
-    if(newpass==cpass){
-        console.log("password is change");
-    }else{
-        console.log("new pass and confirm pass are not match");
-    }
-}
+// let oldpass=123,newpass=123,cpass=123;
+// if(oldpass==newpass){
+//     console.error("old and new password both are same");
+// }else{
+//     if(newpass==cpass){
+//         console.log("password is change");
+//     }else{
+//         console.log("new pass and confirm pass are not match");
+//     }
+// }
 
