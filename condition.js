@@ -63,7 +63,7 @@
 
 // project 2
 
- 5
+//  5
 // let par=55;
 // if(par>=75){
 //     console.log("grade a:");

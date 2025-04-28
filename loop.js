@@ -91,6 +91,36 @@
 // }while(i <= 100);
 // console.log("sum:" + sum);
 
+// pelindrom Number
+
+// let num=125;
+// let original=num;
+// let reverse=0;
+// while( num >= 0){
+//      let rem = num % 10;
+//      reverse=(reverse *10)+rem;
+//      num=Math.floor(num /10);
+// }
+// console.log("reverse")
+
+// Armstrong number
+// let num=125;
+// let original=num;
+// let reverse=0;
+// while( num >= 0){
+//      let rem = num % 10;
+//      reverse +reverse +rem **3;
+//      num=Math.floor(num /10);
+// }
+
+
+
+
+
+
+
+
+
 
 
 
