@@ -23,14 +23,14 @@
 //     console.log("iife function is the called..!")
 // })()
 
-function test(callback){
-    console.log("test called..");
-    callback();
-}
-function helloo(){
-    console.log("helloo called..");
-    testhelloo();
-}
+// function test(callback){
+//     console.log("test called..");
+//     callback();
+// }
+// function helloo(){
+//     console.log("helloo called..");
+//     testhelloo();
+// }
 
 
 

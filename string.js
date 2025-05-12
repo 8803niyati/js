@@ -12,9 +12,9 @@
 // console.log(data.slice(2,10));
 
 // 2.touppercase
-let data = "javascript language";
-console.log(data);
-console.log(data.Touppercase());
+// let data = "javascript language";
+// console.log(data);
+// console.log(data.uppercase());
 
 
 
