@@ -28,7 +28,7 @@ addForm.addEventListener('submit', (e) => {
     }
 
     books.push(newBook)
-    // sessionStorage.setItem('books', JSON.stringify( books));
+   
     localStorage.setItem('books', JSON.stringify( books));
     displayData();
     addForm.reset();
@@ -37,7 +37,7 @@ addForm.addEventListener('submit', (e) => {
 
 function displayData() {
     let books = JSON.parse(localStorage.getItem('books'));
-    // console.log(books);
+  
     let rowData = "";
     books.forEach((book, index) => {
         let row = `
@@ -63,14 +63,14 @@ displayData();
 function deleteBook(id){
     let books = JSON.parse(localStorage.getItem('books'))
     books.splice(id, 1);
-    // books = books.filter((book) => book.title != title)
+   
     localStorage.setItem('books', JSON.stringify(books));
     displayData();
 }
 
 function editBook(id){
     let books = JSON.parse(localStorage.getItem('books'));
-    // console.log(books[id]);
+   
     let book = books[id];
 
     editTitle.value = book.title;
@@ -95,7 +95,7 @@ editForm.addEventListener('submit', (e) => {
         category: editCategory.value
     }
 
-    // sessionStorage.setItem('books', JSON.stringify( books));
+    
     localStorage.setItem('books', JSON.stringify( books));
     displayData();
 
