@@ -1,42 +1,48 @@
 let display = document.querySelector("#display");
-let buttons = document.querySelector('button');
+let buttons = document.querySelectorAll('button');
 
-let currentnum =''
+let currentNum = ""
 
-function displaydata(){
-     display.value = currentnum || 0;
-
-
+function displayData() {
+    display.value = currentNum || 0;
 }
 
-function appenddata(data){
-      currentnum =  currentnum + data;
-      displaydata()
+function appendData(data){
+    currentNum = currentNum + data;
+    displayData()
 }
 
-displaydata()
-function calculate(){
-       let result = evel(currentnum)
-       currentnum = result.tostring()
-       displaydata();
+displayData()
+
+function calculate() {
+    let result = eval(currentNum)
+    currentNum = result.toString()
+    displayData();
 }
 
-function cleardata(){
-       currentnum = "";
-        displaydata();
+function clearData(){
+    currentNum = ""
+    displayData();
 }
 
-buttons.foreach((button) => {
-       buttons.addEventListener('click' , () => {
-              let value = (button.textcontent);
-              if(value == "c"){
-                     cleardata();
-             }
-             else if(value == "="){
-              calculate()
-             }
-             else{
-              appenddata(value)
-             }
-       })
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        // console.log(button.textContent);
+        let value = (button.textContent);
+        if(value == "C"){
+            clearData();
+        }else if(value == "="){
+            calculate()
+        }else{
+            appendData(value)
+        }
+    })
 })
+
+
+// Budget App
+// random string generator
+// count number of word
+// count vowel charatcters
+// currency convertor
